@@ -25,6 +25,9 @@ export const handleCalculate = ({
 		setOperator('');
 	} else if (operator === '/') {
 		newValue = Number(operand1) / Number(operand2);
+		if(newValue === Infinity) {
+			newValue = '0'
+		}
 		setOperand1(String(newValue));
 		setOperand2('');
 		setOperator('');
