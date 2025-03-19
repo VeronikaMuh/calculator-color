@@ -1,0 +1,71 @@
+.body {
+	width: 100vw;
+}
+.bodyWidth {
+	padding: 200px 0;
+}
+.calculator {
+	display: flex;
+	flex-direction: column;
+	max-width: 300px;
+	height: auto;
+	margin: 0 auto;
+	padding: 20px;
+	gap: 30px;
+	border: 2px solid rgb(47, 47, 47);
+	background-color: rgb(123, 125, 125);
+}
+
+.window {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+	width: 100%;
+	height: 100px;
+
+	font-weight: 700;
+	font-size: 24px;
+	overflow: hidden;
+	padding-right: 10px;
+
+	border-radius: 5px;
+	border: 1px solid rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}
+
+.calculator-w {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+}
+
+.buttonNumbers {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 10px;
+}
+
+.buttonFunctional {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 10px;
+}
+
+button {
+	width: 50px;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	border: 1px solid black;
+	transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+	background-color: rgb(200, 200, 200);
+	transform: scale(110%);
+}
+
+.itogValue {
+	font-weight: 700;
+	font-size: 34px;
+}
